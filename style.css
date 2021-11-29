@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
+
+:root{
+    --cor01: hsl(215, 51%, 70%);
+    --cor02: hsl(178, 100%, 50%);
+    --cor03: hsl(217, 54%, 11%); /*bg Body*/
+    --cor04: hsl(216, 50%, 16%); /*bg Div Card*/
+    --cor05: hsl(215, 32%, 27%); /*bg Line*/
+    --cor06: hsl(0, 0%, 100%);
+    --cor07: rgba(0, 0, 0, 0.465); /*Shaded*/
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor03);
+    font-family: Outfit, Arial, sans-serif;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+}
+
+#card{
+    background-color: var(--cor04);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px var(--cor07);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img{
+    position: relative;
+}
+
+.img > img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--cor07);
+}
+
+.img > a{
+    background-color: hsl(178, 100%, 50%, 0.288);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.img > a:hover{
+    opacity: 1;
+}
+
+.p{
+    margin: 0px;
+    padding: 15px 15px 10px 15px;
+    width: 255px;
+}
+
+#p1{
+    color: var(--cor06);
+    font-size: 18px;
+}
+
+#p1 > a{
+    text-decoration: none;
+    color: var(--cor06);
+}
+
+#p1 a:hover{
+    color: var(--cor02);
+}
+
+#p2{
+    color: var(--cor01);
+}
+
+#card ul {
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 15px;
+}
+
+#p3{
+    color: var(--cor02);
+}
+
+#p3 img{
+    width: 8px;
+    height: 15px;
+    padding: 0px;
+}
+
+#p4{
+    color: var(--cor01);
+    padding-left: 50px;
+}
+
+#p4 img{
+    width: 12px;
+    height: 12px;
+    padding: 0px;
+}
+
+hr{
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border: 1px solid var(--cor05);
+}
+
+#p5{
+    width: 40px;
+    height: 40px;
+}
+
+#p5 > img{
+    width: 40px;
+    height: 40px;
+}
+
+#p6{
+    color: var(--cor01);
+    padding: 5px;
+}
+
+#p7{
+    color: var(--cor06);
+    padding: 5px;
+}
+
+#p7 > a{
+    text-decoration: none;
+    color: var(--cor06);
+}
+
+#p7 > a:hover{
+    color: var(--cor02);
+}
+
+.attribution{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: var(--cor06);
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}

@@ -12,155 +12,155 @@
     --cor07: rgba(0, 0, 0, 0.465); /*Shaded*/
 }
 
-body{
+*{
     margin: 0px;
-    background-color: var(--cor03);
+    padding: 0px;
+    box-sizing: border-box;
     font-family: Outfit, Arial, sans-serif;
 }
 
-main{
+html, body{
+    width: 100%;
     height: 100vh;
-    position: relative;
 }
 
-#card{
-    background-color: var(--cor04);
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px var(--cor07);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+body{
+    background-color: var(--cor03);
 }
 
-.img{
-    position: relative;
-}
-
-.img > img{
-    width: 250px;
-    height: 250px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px var(--cor07);
-}
-
-.img > a{
-    background-color: hsl(178, 100%, 50%, 0.288);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
+div.conteiner{
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    opacity: 0;
+    align-items: center;
+    flex-direction: column;
 }
 
-.img > a:hover{
+div.card{
+    width: 300px;
+    height: 550px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--cor07);
+    background-color: var(--cor04);
+}
+
+div.img{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--cor07);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./imagens/image-equilibrium.jpg');
+    background-size: contain;
+}
+
+div.img > div{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(178, 100%, 50%, 0.288);
+}
+
+div.img > div:hover{
     opacity: 1;
 }
 
-.p{
-    margin: 0px;
-    padding: 15px 15px 10px 15px;
-    width: 255px;
-}
-
-#p1{
-    color: var(--cor06);
-    font-size: 18px;
-}
-
-#p1 > a{
-    text-decoration: none;
-    color: var(--cor06);
-}
-
-#p1 a:hover{
-    color: var(--cor02);
-}
-
-#p2{
-    color: var(--cor01);
-}
-
-#card ul {
-    font-size: 18px;
-    list-style: none;
-    display: flex;
-    margin: 0px;
+div.p{
+    width: 300px;
     padding: 15px;
+    font-size: 1.2rem;
+    color: var(--cor06);
 }
 
-#p3{
+div.p > p:hover{
+    cursor: pointer;
     color: var(--cor02);
 }
 
-#p3 img{
-    width: 8px;
-    height: 15px;
-    padding: 0px;
-}
-
-#p4{
+div.text{
+    width: 300px;
+    padding: 15px;
     color: var(--cor01);
-    padding-left: 50px;
 }
 
-#p4 img{
-    width: 12px;
-    height: 12px;
-    padding: 0px;
+div.info{
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.left, div.right{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.left > p, div.right > p{
+    margin: 0px 5px;
+}
+
+div.left > p{
+    color: var(--cor02);
+}
+
+div.right > p{
+    color: var(--cor01);
 }
 
 hr{
-    margin-top: 0px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
+    margin: 20px 15px;
     border: 1px solid var(--cor05);
 }
 
-#p5{
-    width: 40px;
-    height: 40px;
+div.perfil-create{
+    display: flex;
+    align-items: center;
 }
 
-#p5 > img{
-    width: 40px;
-    height: 40px;
+div.perfil-create > img{
+    width: 50px;
+    height: 50px;
+    margin: 0px 15px;
 }
 
-#p6{
+div.perfil-create > p{
     color: var(--cor01);
-    padding: 5px;
 }
 
-#p7{
-    color: var(--cor06);
-    padding: 5px;
-}
-
-#p7 > a{
-    text-decoration: none;
+div.perfil-create > p > strong{
+    font-weight: normal;
     color: var(--cor06);
 }
 
-#p7 > a:hover{
+div.perfil-create > p > strong:hover{
+    cursor: pointer;
     color: var(--cor02);
 }
 
-.attribution{
-    font-family: Arial, Helvetica, sans-serif;
+div.attribution{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.attribution > p{
     font-size: 11px;
-    text-align: center;
     color: var(--cor06);
 }
 
-.attribution a{
+div.attribution > p > a{
     color: hsl(228, 45%, 44%);
 }
